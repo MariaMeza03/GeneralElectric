@@ -17,11 +17,11 @@
 	&--show{
 		padding: 15px;
 		top: 0;
-		background: linear-gradient(90deg, white); //#92d2
+		background: linear-gradient(90deg, $elephant); //#92d2
 	}
 
 	&--hide{
-		background: $white;
+		background: $elephant;
 	}
 
 	@media(min-width:1199px){
@@ -43,7 +43,7 @@
 		}
 
 		&__logo {
-			width: 220px;
+			width: 50px;
 		}
 
 		&__toggle {
@@ -110,103 +110,14 @@
 		}
 
 		&__logo {
-			width: 240px;
-
-            @media(min-width:1700px){
-				width: 220px;
-			}
+			width: 50px;
 		}
-
-
-		&__pages{
-			@include flex-center-center;
-			font-size: 14px;
-			font-weight: 700;
-			gap: 40px;
-
-			@media(min-width:1700px){
-				gap: 40px;
-			}
-
-            a.links{
-				font-size: 15px;
-				color: black;
-				font-weight: 800;
-				padding:8px 15px;
-				transition: 0.3s;
-				text-decoration: none;
-
-                @media(min-width:1700px){
-                    padding:8px 15px;
-                    font-size: 16px;
-                }
-				
-	
-				&:hover{
-                    background-color: $water_blue;
-					color: $white;
-                    border-radius: 5px
-				}
-
-                &--active{
-                    padding:10px 8px;
-                    background-color: $water_blue;
-					color: $white;
-                    border-radius: 5px;
-					font-size: 16px;
-
-                    @media(min-width:1700px){
-                        padding:8px 15px;
-                    }
-
-                    
-                }
-	
-			}
-
-			button.links{
-				font-size: 15px;
-				color: black;
-				font-weight: 800;
-				padding:10px 8px;
-				transition: 0.3s;
-				text-decoration: none;
-
-                @media(min-width:1700px){
-                    padding:8px 15px;
-                    font-size: 16px;
-                }
-				
-	
-				&:hover{
-                    background-color: $water_blue;
-					color: $white;
-                    border-radius: 5px
-				}
-
-                &--active{
-                    padding:10px 8px;
-                    background-color: $water_blue;
-					color: $white;
-                    border-radius: 5px;
-					font-size: 16px;
-
-                    @media(min-width:1700px){
-                        padding:8px 15px;
-                    }
-
-                    
-                }
-	
-			}
-		}
-
 
         &__contact{
             @include flex-center-center;
             gap: 30px;
 
-            &__phone{
+            &__item{
                 @include flex-center-center;
                 gap: 10px;
 
@@ -224,9 +135,8 @@
 
                 a.phone{
                     font-size: 16px;
-                    color: black;
-                    text-transform: uppercase;
-                    font-weight: 800;
+                    color: $white;
+                    font-weight: 400;
                     padding: 10px 0px ;
                     transition: 0.3s;
 
@@ -236,21 +146,6 @@
         
                 }  
             }
-
-            a.whatsApp{
-                background-color: $water_blue;
-                border-radius: 5px;
-                font-size: 15px;
-                padding: 9px !important;
-                color: white;
-                font-weight: bold;
-                text-transform: uppercase;
-
-                @media(min-width:1700px){
-                    font-size: 16px;
-                    padding: 13px 36px !important;
-                }
-            }	
         }
 
 	}

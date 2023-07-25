@@ -10,18 +10,29 @@
 @import 'layout/header';
 @import 'layout/menu';
 @import 'layout/footer';
-@import 'layout/submenu';
+
+//*components
+@import 'components/hero';
+@import 'components/services';
+@import 'components/call_action';
+@import 'components/offer';
 
 @font-face {
-	font-family: Open OpenSans-Regular;
-	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-family: GE Sans;
+	src: url('../fonts/GE\ Inspira\ Regular.ttf') format('truetype');
+
+  }
+
+  @font-face {
+	font-family: GE Sans Bold;
+	src: url('../fonts/GE\ Inspira\ Bold.ttf') format('truetype');
 
   }
 
 
   
 *{
-	font-family: Open OpenSans-Regular;
+	font-family: GE Sans;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -45,7 +56,6 @@ svg{
 }
 
 h1,h2{
-	font-family: Rajdhani;
+	font-family: GE Sans Bold;
 }
-
 
