@@ -1,0 +1,60 @@
+.footer{
+	width: 100%;
+	background-color:$baltic_sea ;
+	position: absolute;
+    padding: 20px 0;
+
+    @media(min-width:1199px){
+        padding:20px  30px ;
+    }
+
+
+	.container{
+		display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+        @media(min-width:1199px){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+	}
+
+
+    &__logo{
+        width: 30%;  
+        margin: auto;
+
+        @media(min-width:1199px){
+            width: 280px; 
+            margin: 0;
+        }
+        
+        img{
+            width: 100%;
+        }
+    }
+
+
+    &_text{
+        @include flex-center-center;
+        flex-direction: column;
+
+        @media(min-width:1199px){
+            @include flex-j-center;
+            flex-direction: column;
+        }
+
+        p , a{
+            font-size: 15px ;
+            font-weight:600;
+            color: $white;
+
+            @media(min-width:1199px){
+                font-size: 15px ;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,51 @@
+//* Globals
+@import 'globals/colors';
+@import 'globals/container.scss';
+
+
+//* Mixins
+@import 'mixins/flex';
+
+//* Layouts
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/footer';
+@import 'layout/submenu';
+
+@font-face {
+	font-family: Open OpenSans-Regular;
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+
+  }
+
+
+  
+*{
+	font-family: Open OpenSans-Regular;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button{
+	border: 0;
+	outline: none;
+	background-color: transparent;
+	transition: 0.3s;
+}
+
+a{
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+svg{
+	width: 100%;
+	height: 100%;
+}
+
+h1,h2{
+	font-family: Rajdhani;
+}
+
+

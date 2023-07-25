@@ -1,0 +1,129 @@
+.menu{
+	width: 65%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+    left: -200%;
+	background-color: $white;
+	z-index: 100;
+	padding: 30px 5px;
+	transition: 0.3s;
+
+	&--active{
+		left: 0%;
+	}
+
+	&__links{
+		@include flex-j-center;
+		flex-direction: column;
+
+		a.link{
+			font-size: 15px;
+			color: black;
+			text-transform: uppercase;
+			font-weight: 800;
+			padding: 10px 0;
+			transition: 0.3s;
+
+			&:hover{
+				color: $water_blue;
+			}
+
+		}
+
+        button.link{
+			font-size: 15px;
+			color: black;
+			text-transform: uppercase;
+			font-weight: 800;
+			padding: 10px 0;
+			transition: 0.3s;
+			margin-right: auto;
+
+			&:hover{
+				color: $black;
+			}
+
+		}
+
+        &__submenu{
+			padding: 10px;
+			display: none;
+			z-index: 200;
+
+			&--active{
+				@include flex-j-center;
+				flex-direction: column;
+			}
+
+			a{
+				font-size: 12px;
+				color: $water_blue;
+				text-transform: uppercase;
+				font-weight: 800;
+				padding: 10px 0;
+				transition: 0.3s;
+	
+				&:hover{
+					color: $water_blue;
+				}
+	
+			}
+		}
+
+        &__contact{
+            @include flex-center-center;
+            flex-direction: column;
+
+            &__phone{
+                 @include flex-center-center;
+                 padding: 20px 0;
+                 gap: 10px;
+                 flex-direction: column;
+
+                 @media(min-width:1199px){
+                    flex-direction: row;
+                 }
+
+
+
+                 &__icon{
+                    width: 32px;
+                }
+
+                a.phone{
+                    font-size: 15px;
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    padding: 10px 0px ;
+                    transition: 0.3s;
+
+					@media(min-width: 1199px){
+						font-size: 16px;
+					}
+        
+                } 
+            }
+
+            a.whatsApp{
+                background-color: $water_blue;
+                border-radius: 5px;
+                font-size: 13px;
+                padding: 16px 26px !important;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                @media(min-width: 1199px){
+                    padding: 16px 36px !important;
+                    font-size: 20px;
+                }
+            }	
+        }
+
+	}
+
+
+
+}
