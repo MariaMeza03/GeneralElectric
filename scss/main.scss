@@ -16,16 +16,19 @@
 @import 'components/services';
 @import 'components/call_action';
 @import 'components/offer';
+@import 'components/request';
+@import 'components/white_line';
+@import 'components/form';
 
 @font-face {
 	font-family: GE Sans;
-	src: url('../fonts/GE\ Inspira\ Regular.ttf') format('truetype');
+	src: url('../fonts/gesans-regular.ttf') format('truetype');
 
   }
 
   @font-face {
 	font-family: GE Sans Bold;
-	src: url('../fonts/GE\ Inspira\ Bold.ttf') format('truetype');
+	src: url('../fonts/gesans-bold.ttf') format('truetype');
 
   }
 
@@ -55,7 +58,5 @@ svg{
 	height: 100%;
 }
 
-h1,h2{
-	font-family: GE Sans Bold;
-}
+
 

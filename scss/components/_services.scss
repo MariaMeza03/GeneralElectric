@@ -11,28 +11,38 @@
     .container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 15px;
         
-        @media(min-width: 1199px){
+        @media(min-width: 768px){
             grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
             
         }
     }
 
     &__item{
-        @include flex-center-center;
+        @include flex-center-start;
         flex-direction: column;
-        gap: 30px;
-        
+        gap: 15px;
+
+        @media(min-width: 768px){
+            gap: 30px;
+        }
+
         &__imagen{
-            width: 100%;
+            width: auto;
+            height: 144px;
+
+            @media(min-width: 768px){
+                width: 100%;
+                height: auto;
+            }
         }
     
         &__text{
             p{
-                padding-top: 25px;
                 color: $black;
-                font-size: 20px;
+                font-size: 15px;
                 text-align: center;
                 font-family: GE Sans bold;
                 font-weight: bold;
@@ -40,6 +50,11 @@
                 @media(min-width:768px){
                     font-size: 25px;
                 }
+
+                @media(min-width:1199){
+                    padding-top: 25px;
+                }
+        
         
                 @media(min-width:1700px){
                     font-size: 30px;

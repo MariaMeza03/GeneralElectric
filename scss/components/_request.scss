@@ -1,11 +1,15 @@
-.call_action{
+.request{
     width: 100%;
 	position: relative;
 	height: auto;
-    padding: 0px 0 30px 0;
+    padding: 30px 0;
+    background-image: url('../img/banner-2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media(min-width:1199px){
-        padding: 0px 0 60px 0;
+        padding: 60px 0;
     }
 
     .container{
@@ -13,17 +17,35 @@
         flex-direction: column;
     }
 
+    h1{
+        color: $white;
+        font-size: 20px;
+        text-align: center;
+        font-family: GE Sans bold;
+
+        @media(min-width:768px){
+            font-size: 25px;
+        }
+
+        @media(min-width:1700px){
+            font-size: 30px;
+        }
+    }
+
     p{
-        /*padding-top: 15px;*/
-        color: $black;
+        padding-top: 15px;
+        color: $white;
         font-family: GE Sans;
         font-size: 15px;
         text-align: center;
 
         @media(min-width: 1199px){
             font-size: 18px;
-            /*padding-top: 30px;*/
+            padding-top: 20px;
         }
+    }
+    span{
+        font-weight: bold;
     }
 
     &__button{
@@ -35,7 +57,7 @@
 
         a{
             border: 2px solid $science_blue;
-            margin-top: 15px;
+            margin-top: 30px;
             background-color:$science_blue ;
             font-family: GE Sans Bold;
             font-weight: bold;
@@ -51,7 +73,6 @@
 
             @media(min-width:1199px){
                 padding: 23px 35px;
-                margin-top: 30px;
             }
             
             @media(min-width:1700px){

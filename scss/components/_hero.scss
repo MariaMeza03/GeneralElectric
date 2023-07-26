@@ -3,7 +3,7 @@
 	position: relative;
 	height: auto;
     background-image:url('../../img/banner-GE.webp');	
-    background-size: cover;
+    background-size:cover ;
     background-position: center;
     background-repeat: no-repeat; 
     //padding: 60px 0;
@@ -11,7 +11,7 @@
     @include flex-center-center;
 
     @media(min-width:1199px){
-        height: 900px;
+        height: 1200px;
         padding: 120px 0;
     }
 
@@ -58,19 +58,23 @@
             font-size: 20px;
             text-align: center;
             font-family: GE Sans;
+            line-height: 25px;
 
             @media(min-width:768px){
                 font-size: 25px;
+                line-height: 30px;
             }
 
-            @media(min-width:1199px){
+            @media(min-width:1199px){ //*table
                 text-align: end;
             }
 
             @media(min-width:1700px){
                 font-size: 30px;
+                line-height: 35px;
             }
         }
+
         &__button{
             @include flex-center-center;
 
@@ -79,6 +83,7 @@
             }
 
             a{
+                border: 2px solid $science_blue;
                 margin-top: 30px;
                 background-color:$science_blue ;
                 font-family: GE Sans Bold;
@@ -135,17 +140,16 @@
             text-align: center;
             font-family: GE Sans bold;
             font-weight: bold;
+            line-height: 25px;
     
             @media(min-width:768px){
                 font-size: 25px;
+                line-height: 30px;
             }
-    
-            @media(min-width:1199px){
-                text-align: end;
-            }
-    
+
             @media(min-width:1700px){
                 font-size: 30px;
+                line-height: 35px;
             }
         }
     }
