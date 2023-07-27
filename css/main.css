@@ -306,7 +306,7 @@
   width: 100%;
   position: relative;
   height: auto;
-  background-image: url("../../img/banner-GE.webp");
+  background-image: url("../img/banner-GE.webp");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -950,7 +950,7 @@
   position: relative;
   height: auto;
   padding: 30px 0;
-  background-image: url("../../img/banner-contacto.webp");
+  background-image: url("../img/banner-contacto.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
