@@ -240,7 +240,7 @@
         .menu__links__contact__item__icon {
           width: 20px; }
         .menu__links__contact__item a.phone {
-          font-size: 15px;
+          font-size: 13px;
           color: white;
           font-weight: 400;
           transition: 0.3s; }
@@ -334,7 +334,7 @@
   height: auto;
   background-image: url("../img/banner-GE.webp");
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom 0 left 10%;
   background-repeat: no-repeat;
   margin-top: 80px;
   display: flex;
