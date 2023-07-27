@@ -31,7 +31,12 @@
 
         &__imagen{
             width: auto;
-            height: 144px;
+            height: 100px;
+
+            @media(min-width: 300px){
+                width: auto;
+                height: 144px;
+            }
 
             @media(min-width: 768px){
                 width: 100%;
@@ -48,7 +53,7 @@
                 font-weight: bold;
         
                 @media(min-width:768px){
-                    font-size: 25px;
+                    font-size: 20px;
                 }
 
                 @media(min-width:1199){
