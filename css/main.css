@@ -336,6 +336,7 @@
   background-size: cover;
   background-position: bottom 0 left 10%;
   background-repeat: no-repeat;
+  padding: 60px 0 0 0;
   margin-top: 80px;
   display: flex;
   align-items: center;
@@ -362,7 +363,8 @@
       font-weight: bold;
       text-align: center;
       font-family: GE Sans Bold;
-      line-height: 32px; }
+      line-height: 32px;
+      text-shadow: black 0.1em 0.1em 0.2em; }
       @media (min-width: 768px) {
         .hero__text h1 {
           font-size: 45px;
@@ -381,7 +383,8 @@
       font-size: 20px;
       text-align: center;
       font-family: GE Sans;
-      line-height: 25px; }
+      line-height: 25px;
+      text-shadow: black 0.1em 0.1em 0.2em; }
       @media (min-width: 768px) {
         .hero__text p {
           font-size: 25px;

@@ -6,7 +6,7 @@
     background-size:cover ;
     background-position:bottom 0 left 10%;
     background-repeat: no-repeat; 
-    //padding: 60px 0;
+    padding: 60px 0 0 0;
     margin-top: 80px;
     @include flex-center-center;
 
@@ -35,6 +35,7 @@
             text-align: center;
             font-family: GE Sans Bold;
             line-height: 32px;
+            text-shadow: black 0.1em 0.1em 0.2em;
 
             @media(min-width:768px){ //*phone
                 font-size: 45px;
@@ -59,7 +60,8 @@
             text-align: center;
             font-family: GE Sans;
             line-height: 25px;
-
+            text-shadow: black 0.1em 0.1em 0.2em;
+            
             @media(min-width:768px){
                 font-size: 25px;
                 line-height: 30px;
