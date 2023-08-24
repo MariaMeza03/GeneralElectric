@@ -52,21 +52,23 @@
   height: 80px;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 100;
-  background: transparent;
+  background: white;
+  border-radius: 0 0 0 10px;
   display: flex; }
   @media (min-width: 1199px) {
     .header {
+      width: 70%;
       padding: 0 30px;
       height: auto;
-      background: transparent; } }
+      background: white; } }
   .header--show {
     padding: 15px;
     top: 0;
     background: linear-gradient(90deg, #00489A); }
   .header--hide {
-    background: rgba(255, 255, 255, 0.8); }
+    /*background: rgba(255,255,255,0.8);*/ }
   @media (min-width: 1199px) {
     .header {
       height: auto; } }
@@ -138,13 +140,17 @@
       .header__desktop__logo img {
         width: 100%; }
     .header__desktop__contact {
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 30px; }
+      @media (min-width: 1199px) {
+        .header__desktop__contact {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; } }
       .header__desktop__contact__item {
-        border: 1px solid #00489A;
-        background-color: white;
         padding: 5px 20px;
         display: flex;
         align-items: center;
