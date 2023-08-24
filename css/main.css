@@ -234,9 +234,6 @@
   .footer__logo {
     margin: auto;
     width: 80px; }
-    @media (min-width: 1199px) {
-      .footer__logo {
-        width: 100px; } }
   .footer__text {
     display: flex;
     align-items: center;
