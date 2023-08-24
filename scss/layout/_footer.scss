@@ -1,6 +1,6 @@
 .footer{
 	width: 100%;
-	background-color:$elephant;
+	background-color:$medium_electric_gray;
 	padding: 30px 0;
 	position: absolute;
 
@@ -9,7 +9,9 @@
 	}
 
 	.container{
-		@include flex-center-center;		
+		@include flex-center-center;	
+		flex-direction: column;	
+		gap: 15px;
 	}
 
 	&__logo{
