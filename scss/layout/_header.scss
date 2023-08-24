@@ -5,12 +5,13 @@
 	top: 0;
 	left: 0;
 	z-index: 100;
-    background: $elephant;
+    background: transparent;
+	display: flex;
    
       @media(min-width:1199px){
         padding: 0 30px;
 		height: auto;
-		background: $elephant;
+		background: transparent;
     }
 
 
@@ -21,7 +22,7 @@
 	}
 
 	&--hide{
-		background: $elephant;
+		background: rgba(255,255,255,0.8);
 	}
 
 	@media(min-width:1199px){
@@ -43,7 +44,7 @@
 		}
 
 		&__logo {
-			width: 50px;
+			width: 150px;
 		}
 
 		&__toggle {
@@ -51,7 +52,7 @@
 			height: 43px;
 			@include flex-center-center;
 			cursor: pointer;
-			background-color:#199cd8;
+			background-color:$elephant;
 			border: 1px solid transparent;
     		border-radius: 4px;
 			padding: 13px 10px;
@@ -98,7 +99,6 @@
 		height: auto;
 		display: none;
 
-
 		@media(min-width: 1200px) {
 			display: block;
 		}
@@ -106,11 +106,16 @@
 		.container {
 			@include flex-center-between;
 			height: 100%;
-			padding: 15px 0;
+			padding-top: 15px ;
+			padding-bottom: 15px;
 		}
 
 		&__logo {
-			width: 50px;
+			width: 300px;
+
+			img{
+				width: 100%;
+			}
 		}
 
         &__contact{
@@ -118,31 +123,33 @@
             gap: 30px;
 
             &__item{
+				border: 1px solid $elephant;
+				background-color: $white;
+				padding: 5px 20px;
                 @include flex-center-center;
                 gap: 10px;
+				border-radius: 70px;
 
                 &__icon{
+					@include flex-center-center;
                     width: 20px;
 
                     @media(min-width:1700px){
-                        width: 32px;
+                        width: 30px;
                     }
 
-                    svg{
+                    img{
                         width: 100%;
                     }
                 }
 
                 a.phone{
-                    font-size: 16px;
-                    color: $white;
+					font-family: Poppins-Regular;
+                    font-size: 18px;
+                    color: $elephant;
                     font-weight: 400;
                     padding: 10px 0px ;
                     transition: 0.3s;
-
-                    @media(min-width:1700px){
-                        font-size: 16px;
-                    }
         
                 }  
             }

@@ -1,9 +1,11 @@
 const swiper= new Swiper('.swiper', {
-    slidesPerView: 1,
-
+    slidesPerView: "auto",
+    spaceBetween: 15,
+    loop:"true",
+    
     navigation: {
-    nextEl: '.offer--next',
-    prevEl: '.offer--prev',
+    nextEl: '.services--next',
+    prevEl: '.services--prev',
     },
 
 

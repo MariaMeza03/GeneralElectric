@@ -15,31 +15,33 @@
 //*components
 @import 'components/hero';
 @import 'components/services';
-@import 'components/call_action';
-@import 'components/offer';
-@import 'components/request';
-@import 'components/white_line';
+@import 'components/banner_contact';
+@import 'components/banner_services';
+@import 'components/reviews';
 @import 'components/form';
+@import 'components/contact';
+@import 'components/offer';
+
+
 
 //*thanks
 @import 'components/thanks';
 
 @font-face {
-	font-family: GE Sans;
-	src: url('../fonts/gesans-regular.ttf') format('truetype');
+	font-family:  Poppins-Regular;
+	src: url('../fonts/Poppins-Regular.ttf') format('truetype');
 
   }
 
   @font-face {
-	font-family: GE Sans Bold;
-	src: url('../fonts/gesans-bold.ttf') format('truetype');
+	font-family:  Poppins-Bold;
+	src: url('../fonts/Poppins-Bold.ttf') format('truetype');
 
   }
 
-
   
 *{
-	font-family: GE Sans;
+	font-family: Poppins-Regular;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
