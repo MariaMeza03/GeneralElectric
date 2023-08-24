@@ -4,8 +4,8 @@ const swiper_review= new Swiper('.swiper_carrousel', {
     loop:"true",
     
     navigation: {
-    nextEl: '.review--next',
-    prevEl: '.review--prev',
+    nextEl: '.benefit--next',
+    prevEl: '.benefit--prev',
     },
 
 
