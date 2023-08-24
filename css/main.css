@@ -168,9 +168,9 @@
           .header__desktop__contact__item__icon img {
             width: 100%; }
         .header__desktop__contact__item a.phone {
-          font-family: Poppins-Regular;
+          font-family: GE-Sans-Regular;
           font-size: 18px;
-          color: #00489A;
+          color: #0870D8;
           font-weight: 400;
           padding: 10px 0px;
           transition: 0.3s; }
@@ -1238,15 +1238,15 @@
     border: 2px solid #00489A; }
 
 @font-face {
-  font-family: Poppins-Regular;
-  src: url("../fonts/Poppins-Regular.ttf") format("truetype"); }
+  font-family: GE-Sans-Regular;
+  src: url("../fonts/gesans-regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: Poppins-Bold;
-  src: url("../fonts/Poppins-Bold.ttf") format("truetype"); }
+  font-family: Ge-Sans-Bold;
+  src: url("../fonts/gesans-bold.ttf") format("truetype"); }
 
 * {
-  font-family: Poppins-Regular;
+  font-family: GE-Sans-Regular;
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
