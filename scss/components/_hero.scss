@@ -3,20 +3,25 @@
     position: relative;
     height: auto;
     @include flex-center-center;
-    background-image: url('../../img/banner.webp');
+    background-image: url('../../img/banner-sin-puntos.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding:85px  0 30px 0;
 
     @media(min-width:1199px){
         height: auto;
-        padding:240px  0 240px 0;
+        padding:120px  0 90px 0;
+        background-image: url('../../img/first-banner.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
     .container{
         @include flex-center-center;
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         @media(min-width:1199px){
             display: grid;
@@ -35,8 +40,11 @@
         }
 
         &__imagen{
-            width: 150px;
+            width:100%;
 
+            @media(min-width:1199px){ //*table
+                width: 150px;
+            }
             
         }
         
@@ -45,7 +53,7 @@
             font-size: 25px;
             font-weight:bold;
             text-align: center;
-            font-family: Poppins-Bold;
+            font-family: Ge-Sans-Bold;
             line-height: 32px;
 
             @media(min-width:768px){ //*phone
@@ -88,14 +96,14 @@
             }
 
             a{
-                border: 2px solid $gold_drop;
+                border: 2px solid $science_blue ;
                 margin-top: 30px;
-                background-color:$gold_drop ;
-                font-family: Poppins-Bold;
+                background-color:$science_blue ;
+                font-family: Ge-Sans-Bold;
                 padding: 15px 30px ;
-                color:$black;
+                color:$white;
                 font-size: 15px;
-                border-radius: 10px;
+                border-radius: 50px;
                 text-align: center;
 
                 @media(min-width:300px){
@@ -109,9 +117,9 @@
             }
 
             a:hover{
-                background-color:$white ;
-                color: $elephant;
-                border: 2px solid $elephant;
+                background-color: $white ;
+                color: $science_blue;
+                border: 2px solid $science_blue;
             }
         }
     }
