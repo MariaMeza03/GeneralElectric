@@ -3,9 +3,6 @@
 	position: relative;
 	height: auto;
     padding: 30px 0 30px 0;
-    background-image: url('../../img/engrane-pequeño.webp');
-    background-position: 0% 0%;
-    background-repeat: no-repeat;
 
     @media(min-width:1199px){
         padding: 60px 0 60px 0;
@@ -52,10 +49,10 @@
 
     &__title{
         h1{
-            color: $elephant;
+            color: $science_blue;
             font-size: 20px;
             text-align: center;
-            font-family:Poppins-Bold;
+            font-family:Ge-Sans-Bold;
        
             @media(min-width:768px){
                 font-size: 25px;
@@ -67,6 +64,18 @@
                     
             @media(min-width:1700px){
                 font-size: 35px;
+            }
+        }
+        p{
+            width: 100%;
+            color: $black;
+            font-family: GE-Sans-Regular;
+            font-size: 15px;
+            text-align: center;
+            padding-top: 15px;
+    
+            @media(min-width: 1199px){
+                font-size: 18px;
             }
         }
 
@@ -85,7 +94,7 @@
         }
 
         @media(min-width: 1199px){
-            gap: 60px;
+            gap: 30px;
         }
 
         &__item{
@@ -100,21 +109,23 @@
             }
 
             &__imagen{
-                height: 120px;
+                height: auto;
                 width: auto;
                 position: relative;
                 top: 20px;
 
-                @media(min-width: 1199px){
+                @media(min-width: 992px){
                     height: 200px;
+                }
+
+                @media(min-width: 1299px){
+                    height: 400px;
                 }
             }
 
             &__text{
-                border-radius: 10px;
                 width: 100%;
                 height: auto;
-                background-color: $elephant;
                 margin-top: auto;
                 padding: 20px 10px 10px 10px;
 
@@ -124,8 +135,8 @@
 
                 h1{
                     width: 100%;
-                    color: $white;
-                    font-family: Poppins-Bold;
+                    color: $science_blue;
+                    font-family: Ge-Sans-Bold;
                     font-size: 18px;
                     text-align: center;
             
@@ -136,8 +147,8 @@
 
                 p{
                     width: 100%;
-                    color: $white;
-                    font-family: Poppins-Regular;
+                    color: $black;
+                    font-family: GE-Sans-Regular;
                     font-size: 15px;
                     text-align: center;
                     padding-top: 15px;
@@ -157,6 +168,43 @@
             display: none;
         }
 
+    }
+
+    &__button{
+        @include flex-center-center;
+
+        @media(min-width:1199px){
+            @include flex-center-end;
+        }
+
+        a{
+            border: 2px solid $science_blue ;
+            background-color:$science_blue ;
+            font-family: Ge-Sans-Bold;
+            margin-top: 15px;
+            font-weight: bold;
+            padding: 15px ;
+            color:$white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 15px; 
+
+            @media(min-width:678px){
+                font-size: 18px;  
+                padding: 15px 30px ;   
+            }
+                
+            @media(min-width:1199px){
+                font-size: 22px;     
+                margin-top: 30px; 
+            }
+        }
+
+        a:hover{
+            background-color: $white ;
+            color: $science_blue;
+            border: 2px solid $science_blue;
+        }
     }
 
 }

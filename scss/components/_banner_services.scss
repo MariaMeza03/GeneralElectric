@@ -1,11 +1,11 @@
 .services_banners{
     background-image: url('../../img/medio\ circ.webp');
-    background-position: 0% 30%;
+    background-position: 0% 20%;
     background-repeat: no-repeat;
-    padding: 30px 0 30px 0;
+    padding: 0px 0 30px 0;
     
     @media(min-width:1199px){
-        padding: 60px 0 60px 0;
+        padding: 0px 0 60px 0;
     }
 
     &__banner_services{
@@ -14,7 +14,7 @@
         height: auto;
         
         @media(min-width:1199px){
-            padding: 60px 0 60px 0;
+            padding: 0px 0 60px 0;
         }
     
         .container{
@@ -27,8 +27,12 @@
             background-image: url('../../img/banner-services.webp');
             background-position: center;
             background-repeat: no-repeat;
-            padding: 30px;
+            padding: 15px;
             border-radius: 20px;
+
+            @media(min-width:1199px){
+                padding: 30px;
+            }
     
             &__text{
                 padding: 30px;
@@ -143,7 +147,7 @@
         h1{
             color: $science_blue;
             font-size: 20px;
-            font-family: Poppins-Bold;
+            font-family: Ge-Sans-Bold;
             text-align: center;
             
             @media(min-width:768px){

@@ -1,11 +1,11 @@
 const swiper= new Swiper('.swiper', {
     slidesPerView: "auto",
-    spaceBetween: 15,
+    spaceBetween: 30,
     loop:"true",
     
     navigation: {
-    nextEl: '.services--next',
-    prevEl: '.services--prev',
+    nextEl: '.services__title_button__buttons--next',
+    prevEl: '.services__title_button__buttons--prev',
     },
 
 
