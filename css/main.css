@@ -971,6 +971,9 @@
             height: 200px; } }
         @media (min-width: 1299px) {
           .offer__grid__item__imagen {
+            height: 350px; } }
+        @media (min-width: 1700px) {
+          .offer__grid__item__imagen {
             height: 400px; } }
       .offer__grid__item__text {
         width: 100%;
