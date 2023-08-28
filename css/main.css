@@ -288,7 +288,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../img/banner-sin-puntos.webp");
+  background-image: url("../img/banner-sin-puntos.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,7 +297,7 @@
     .hero {
       height: auto;
       padding: 120px  0 90px 0;
-      background-image: url("../../img/first-banner.webp");
+      background-image: url("../img/first-banner.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; } }
@@ -399,13 +399,13 @@
   height: auto;
   padding: 30px 0 30px 0;
   margin: 30px 0 30px 0;
-  background-image: url("../../img/ban-gal.webp");
+  background-image: url("../img/ban-gal.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   @media (min-width: 1199px) {
     .services {
-      background-image: url("../../img/banner-gal.webp");
+      background-image: url("../img/banner-gal.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -484,22 +484,22 @@
           justify-content: flex-end;
           height: 600px; } }
       .services__carrousel__item--one {
-        background-image: url("../../img/refri.webp");
+        background-image: url("../img/refri.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .services__carrousel__item--two {
-        background-image: url("../../img/centro-lav.webp");
+        background-image: url("../img/centro-lav.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .services__carrousel__item--three {
-        background-image: url("../../img/sec.webp");
+        background-image: url("../img/sec.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .services__carrousel__item--four {
-        background-image: url("../../img/lavadoras.webp");
+        background-image: url("../img/lavadoras.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
@@ -781,7 +781,7 @@
     -webkit-align-items: center; }
 
 .services_banners {
-  background-image: url("../../img/medio circ.webp");
+  background-image: url("../img/medio circ.webp");
   background-position: 0% 20%;
   background-repeat: no-repeat;
   padding: 0px 0 30px 0; }
@@ -802,7 +802,7 @@
       flex-direction: column; }
     .services_banners__banner_services__banner {
       width: 100%;
-      background-image: url("../../img/banner-services.webp");
+      background-image: url("../img/banner-services.webp");
       background-position: center;
       background-repeat: no-repeat;
       padding: 15px;
@@ -1059,7 +1059,7 @@
   width: 100%;
   height: auto;
   padding: 30px 0;
-  background-image: url("../../img/fondo-b.webp");
+  background-image: url("../img/fondo-b.webp");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat; }
@@ -1278,9 +1278,9 @@
         font-size: 18px;
         padding-top: 20px; } }
   .thanks a {
-    border: 2px solid #00489A;
+    border: 2px solid #0870D8;
     margin-top: 15px;
-    background-color: #00489A;
+    background-color: #0870D8;
     font-family: OpenSans-Bold;
     font-weight: bold;
     padding: 15px 30px;
@@ -1298,8 +1298,8 @@
         margin-top: 30px; } }
   .thanks a:hover {
     background-color: white;
-    color: #00489A;
-    border: 2px solid #00489A; }
+    color: #0870D8;
+    border: 2px solid #0870D8; }
 
 @font-face {
   font-family: GE-Sans-Regular;

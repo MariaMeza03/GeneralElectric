@@ -33,9 +33,9 @@
     }
 
     a{
-      border: 2px solid $elephant;
+      border: 2px solid $science_blue;
       margin-top: 15px;
-      background-color:$elephant;
+      background-color:$science_blue;
       font-family: OpenSans-Bold;
       font-weight: bold;
       padding: 15px 30px ;
@@ -60,7 +60,7 @@
 
     a:hover{
       background-color:$white ;
-      color: $elephant;
-      border: 2px solid $elephant;
+      color:$science_blue;
+      border: 2px solid $science_blue;
     }
 }
