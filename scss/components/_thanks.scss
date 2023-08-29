@@ -3,9 +3,13 @@
   height: 83vh;
   @include flex-center-center;
   flex-direction: column;
+  background-image: url('../img/fondo-gracias.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
       h2{
-        color: $black;
+        color: $white;
         font-size: 20px;
         text-align: center;
         font-family: GE Sans bold;
@@ -15,13 +19,13 @@
         }
 
         @media(min-width:1700px){
-            font-size: 30px;
+            font-size: 35px;
         }
     }
 
     p{
       padding-top: 15px;
-      color: $black;
+      color: $white;
       font-family: GE Sans;
       font-size: 15px;
       text-align: center;

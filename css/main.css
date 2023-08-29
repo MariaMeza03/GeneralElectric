@@ -1123,9 +1123,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-image: url("../img/fondo-gracias.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .thanks h2 {
-    color: black;
+    color: white;
     font-size: 20px;
     text-align: center;
     font-family: GE Sans bold; }
@@ -1134,10 +1138,10 @@
         font-size: 25px; } }
     @media (min-width: 1700px) {
       .thanks h2 {
-        font-size: 30px; } }
+        font-size: 35px; } }
   .thanks p {
     padding-top: 15px;
-    color: black;
+    color: white;
     font-family: GE Sans;
     font-size: 15px;
     text-align: center; }
