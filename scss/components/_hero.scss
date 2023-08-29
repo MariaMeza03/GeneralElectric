@@ -1,60 +1,41 @@
 .hero{
     width: 100%;
-    position: relative;
-    height: auto;
+	position: relative;
+	height: auto;
+    background-image:url('../img/banner-GE.webp');	
+    background-size:cover ;
+    background-position:bottom 0 left 10%;
+    background-repeat: no-repeat; 
+    padding: 60px 0 0 0;
+    margin-top: 80px;
     @include flex-center-center;
-    background-image: url('../img/banner-sin-puntos.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding:85px  0 30px 0;
 
     @media(min-width:1199px){
-        height: auto;
-        padding:120px  0 90px 0;
-        background-image: url('../img/first-banner.webp');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 1080px;
+        padding: 120px 0;
     }
 
 
     .container{
-        @include flex-center-center;
-        flex-direction: column-reverse;
+        @include flex-end-center;
+        flex-direction: column;
 
         @media(min-width:1199px){
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
+            @include flex-end-center;
+		}
     }
 
     &__text{
         width: 100%;
-        @include flex-center-center;
-        flex-direction: column;
-
-        @media(min-width:1199px){ //*table
-            @include flex-start-center;
-        }
-
-        &__imagen{
-            width:100%;
-
-            @media(min-width:1199px){ //*table
-                width: 150px;
-            }
-            
-        }
         
         h1{
-            color: $black;
+            color: white;
             font-size: 25px;
             font-weight:bold;
             text-align: center;
-            font-family: Ge-Sans-Bold;
+            font-family: GE Sans Bold;
             line-height: 32px;
+            text-shadow: black 0.1em 0.1em 0.2em;
 
             @media(min-width:768px){ //*phone
                 font-size: 45px;
@@ -62,48 +43,57 @@
             }
 
             @media(min-width:1199px){ //*table
-                text-align: start;
-                font-size: 60px;
+                text-align: end;
             }
 
             @media(min-width:1700px){//*Desktop
-                line-height: 72px;
-                font-size: 66px;
+                line-height: 70px;
+                font-size: 60px;
+                text-align: end;
             }
         }
-
 
         p{
             padding-top: 25px;
-            color: $black;
+            color: white;
             font-size: 20px;
             text-align: center;
+            font-family: GE Sans;
             line-height: 25px;
+            text-shadow: black 0.1em 0.1em 0.2em;
             
             @media(min-width:768px){
                 font-size: 25px;
-                line-height: 32px;
+                line-height: 30px;
             }
+
             @media(min-width:1199px){ //*table
-                text-align: start;
+                text-align: end;
+            }
+
+            @media(min-width:1700px){
+                font-size: 30px;
+                line-height: 35px;
             }
         }
+
         &__button{
             @include flex-center-center;
 
             @media(min-width:1199px){
-                @include flex-center-start;
+                @include flex-center-end;
             }
 
             a{
-                border: 2px solid $science_blue ;
+                border: 2px solid $science_blue;
                 margin-top: 30px;
                 background-color:$science_blue ;
-                font-family: Ge-Sans-Bold;
+                font-family: GE Sans Bold;
+                font-weight: bold;
                 padding: 15px 30px ;
-                color:$white;
+                color:white;
                 font-size: 15px;
-                border-radius: 50px;
+                border-radius: 10px;
                 text-align: center;
 
                 @media(min-width:300px){
@@ -114,21 +104,66 @@
                     font-size: 25px;
                     
                 }
+                @media(min-width:1700px){
+                    font-size: 30px;
+                }
             }
 
             a:hover{
-                background-color: $white ;
+                background-color:$white ;
                 color: $science_blue;
                 border: 2px solid $science_blue;
             }
         }
     }
 
-    &__imagen{
+    &__content{
         width: 100%;
+        background-color: $elephant;
+        margin-top: 50%;
+        padding: 15px;
+        @include flex-center-center;
+        flex-direction: column;
+        bottom: -20px;
 
-        img{
-            width: 100%;
+        @media(min-width:1199px){
+            width: 600px; 
+            position: absolute;
+            padding: 20px;
+        }
+
+        @media(min-width:1999px){
+            bottom: 10px;
+        }
+
+        &__logo{
+            width: 50px;
+        }
+    
+        p{
+            padding-top: 15px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            font-family: GE Sans bold;
+            font-weight: bold;
+            line-height: 25px;
+    
+            @media(min-width:768px){
+                font-size: 25px;
+                line-height: 30px;
+            }
+
+            @media(min-width:1199px){
+                padding-top: 25px;
+            }
+
+            @media(min-width:1700px){
+                font-size: 30px;
+                line-height: 35px;
+            }
         }
     }
-}
+
+
+} 

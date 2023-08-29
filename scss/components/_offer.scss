@@ -2,11 +2,10 @@
     width: 100%;
 	position: relative;
 	height: auto;
-    padding: 30px 0 30px 0;
+    padding: 0 0 30px 0;
 
     @media(min-width:1199px){
-        padding: 60px 0 60px 0;
-        margin: 0px 0px 60px 0;
+        padding: 0 0 60px 0 ;
     }
 
     .container{
@@ -17,7 +16,7 @@
     &--prev{
 		position: absolute;
         left: 15px;
-		top: 50%;
+		top: 40%;
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
@@ -33,7 +32,7 @@
 	&--next{
 		position: absolute;
         right: 15px;
-		top: 50%;
+		top: 40%;
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
@@ -49,40 +48,36 @@
 
     &__title{
         h1{
-            color: $science_blue;
+            color: $black;
             font-size: 20px;
             text-align: center;
-            font-family:Ge-Sans-Bold;
-       
+            font-family: GE Sans bold;
+            font-weight: bold;
+    
             @media(min-width:768px){
                 font-size: 25px;
             }
     
-            @media(min-width:1199px){
+            @media(min-width:1700px){
                 font-size: 30px;
             }
-                    
-            @media(min-width:1700px){
-                font-size: 35px;
-            }
         }
+
         p{
-            width: 100%;
+            padding: 15px 0 0 0;
             color: $black;
-            font-family: GE-Sans-Regular;
+            font-family: GE Sans;
             font-size: 15px;
             text-align: center;
-            padding-top: 15px;
     
             @media(min-width: 1199px){
                 font-size: 18px;
+                padding: 30px 0 0 0;
             }
         }
-
     }
 
     &__grid{
-        width: 100%;
         padding: 30px 0;
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
@@ -90,75 +85,57 @@
 
         @media(min-width: 992px){
             display: grid;
-            padding: 30px 0 0 0;
-        }
-
-        @media(min-width: 1199px){
+            padding: 60px 0;
             gap: 30px;
         }
 
+        @media(min-width: 1199px){
+            padding: 140px 0 60px;
+            gap: 30px;
+        }
+
+        @media(min-width: 1700px){
+            gap: 120px;
+        }
+
         &__item{
-            height: 100%;
+            background-color:$elephant;
+            height: 400px;
             @include flex-center-start;
             flex-direction: column;
-            border-radius: 10px;
-            padding: 5px;
+            padding: 15px;
+
 
             @media(min-width: 1199px){
                 @include flex-center-end;
             }
 
             &__imagen{
-                height: auto;
-                width: auto;
+                width: 100%;
+                height: 250px;
                 position: relative;
-                top: 20px;
+                top: -40px;
 
-                @media(min-width: 992px){
-                    height: 200px;
+                @media(min-width: 1199px){
+                    position: initial;
+                    top: 0;
                 }
 
-                @media(min-width: 1299px){
-                    height: 350px;
-                }
-
-                @media(min-width: 1700px){
-                    height: 400px;
+                @media(min-width: 1199px){
+                    height: 370px;
                 }
             }
 
             &__text{
-                width: 100%;
-                height: auto;
-                margin-top: auto;
-                padding: 20px 10px 10px 10px;
-
-                @media(min-width: 1199px){
-                    padding: 30px 15px 15px 15px;
-                }
-
-                h1{
-                    width: 100%;
-                    color: $science_blue;
-                    font-family: Ge-Sans-Bold;
-                    font-size: 18px;
-                    text-align: center;
-            
-                    @media(min-width: 1199px){
-                        font-size: 22px;
-                    }
-                }
-
                 p{
-                    width: 100%;
-                    color: $black;
-                    font-family: GE-Sans-Regular;
+                    color: $white;
+                    font-family: GE Sans;
                     font-size: 15px;
                     text-align: center;
-                    padding-top: 15px;
             
                     @media(min-width: 1199px){
                         font-size: 18px;
+                        padding-top: 30px;
                     }
                 }
             }
@@ -166,75 +143,180 @@
     }
 
     &__carrousel{
-        width: 80%;
-        padding-top: 5px ;
+        padding: 30px 0 10px 0;
+
         @media(min-width: 992px){
             display: none;
+        }
+
+        &__item{
+            width: 95%;
+            background-color:$elephant;
+            height: 400px;
+            @include flex-center-start;
+            flex-direction: column;
+            padding: 15px;
+            margin: 20px 1px;
+            
+            &__imagen{
+                width: 100%;
+                height: 250px;
+                position: relative;
+                top: -40px;
+            }
+
+            &__text{
+                p{
+                    color: $white;
+                    font-family: GE Sans;
+                    font-size: 15px;
+                    text-align: center;
+            
+                    @media(min-width: 1199px){
+                        font-size: 18px;
+                        padding-top: 30px;
+                    }
+                }
+            }
         }
 
     }
 
     &__button{
-        @include flex-center-center;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 5px;
+
+        @media(min-width:678px){
+            width: 80%;
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         @media(min-width:1199px){
-            @include flex-center-end;
+            width: 60%;
         }
-
-        a{
-            border: 2px solid $science_blue ;
-            background-color:$science_blue ;
-            font-family: Ge-Sans-Bold;
-            margin-top: 15px;
-            font-weight: bold;
-            padding: 15px ;
-            color:$white;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 15px; 
+        
+        &__item_one{
+            height: 100px;
+            border: 1px solid $science_blue;
+            border-radius: 5px 5px 0px 0px;
+            @include flex-center-center;
+            padding: 15px;
 
             @media(min-width:678px){
-                font-size: 18px;  
-                padding: 15px 30px ;   
+                border-radius: 5px 0 0 5px;
             }
-                
-            @media(min-width:1199px){
-                font-size: 22px;     
-                margin-top: 30px; 
+
+            h1{
+                color:$science_blue;
+                font-size: 20px;
+                text-align: center;
+                font-family: GE Sans bold;
+                font-weight: bold;
+                line-height: 25px;
+        
+                @media(min-width:768px){
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+        
+                @media(min-width:1700px){
+                    font-size: 30px;
+                    line-height: 35px;
+                }
             }
         }
 
-        a:hover{
-            background-color: $white ;
-            color: $science_blue;
+        &__item_two{
             border: 2px solid $science_blue;
-        }
-    }
+            height: 100px;
+            background-color: $science_blue;
+            border-radius: 0 0px 5px 5px;
+            @include flex-center-center;
+            gap: 15px;
+            padding: 15px;
+            cursor: pointer;
 
+            @media(min-width:678px){
+                border-radius: 0 5px 5px 0;
+            }
+
+            &__icon{
+                width: 64px;
+            }
+
+            h1{
+                color:$white;
+                font-size: 20px;
+                text-align: center;
+                font-family: GE Sans bold;
+                font-weight: bold;
+                line-height: 25px;
+        
+                @media(min-width:768px){
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+        
+                @media(min-width:1700px){
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+
+            &:hover{
+                background-color:$white ;
+                border: 2px solid $science_blue;
+
+                h1{
+                    color: $science_blue;
+                }
+
+                .offer__button__item_two__icon{
+                    img{
+                        filter: invert(1) hue-rotate(186deg);
+                        filter: drop-shadow(rgb(10, 89, 210) 3px 2px 0px);
+                    }
+                }
+            }
+        }
+
+    }
 }
 
-.swiper_services{
-	width: 100%;
-    margin: auto;
-    overflow: hidden;
-    height: 100%;
+.swiper{
+	width: 80%;
+	height: 100%;
+
+    @media(min-width: 399px){
+        width: 70%;
+    }
+
+    @media(min-width: 499px){
+        width: 60%;
+    }
+
+    @media(min-width: 599px){
+        width: 50%;
+    }
+
 
 		.swiper-slide{
-            width: 100% !important;
-            height: 100%;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center; 
+			width: 99% !important;
+			height: 100%;
+            @include flex-center-center;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
 
 		}
-
-        
 
 }

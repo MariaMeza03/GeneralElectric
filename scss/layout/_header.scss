@@ -3,18 +3,14 @@
 	height: 80px;
 	position: fixed;
 	top: 0;
-	right: 0;
+	left: 0;
 	z-index: 100;
-    background: white;
-	display: flex;
-	
+    background: $elephant;
    
       @media(min-width:1199px){
-		width: 70%;
         padding: 0 30px;
 		height: auto;
-		background: white;
-		border-radius: 0 0 0 10px;
+		background: $elephant;
     }
 
 
@@ -25,7 +21,7 @@
 	}
 
 	&--hide{
-		background: white;
+		background: $elephant;
 	}
 
 	@media(min-width:1199px){
@@ -55,7 +51,7 @@
 			height: 43px;
 			@include flex-center-center;
 			cursor: pointer;
-			background-color:$medium_electric_gray;
+			background-color:#199cd8;
 			border: 1px solid transparent;
     		border-radius: 4px;
 			padding: 13px 10px;
@@ -102,6 +98,7 @@
 		height: auto;
 		display: none;
 
+
 		@media(min-width: 1200px) {
 			display: block;
 		}
@@ -109,53 +106,43 @@
 		.container {
 			@include flex-center-between;
 			height: 100%;
-			padding-top: 15px ;
-			padding-bottom: 15px;
+			padding: 15px 0;
 		}
 
 		&__logo {
-			width: 300px;
-
-			img{
-				width: 100%;
-			}
+			width: 50px;
 		}
 
         &__contact{
-			width: 100%;
             @include flex-center-center;
             gap: 30px;
 
-			@media(min-width:1199px){
-				@include flex-center-between;
-			}
-
             &__item{
-				padding: 5px 20px;
                 @include flex-center-center;
                 gap: 10px;
-				border-radius: 70px;
 
                 &__icon{
-					@include flex-center-center;
                     width: 20px;
 
                     @media(min-width:1700px){
-                        width: 30px;
+                        width: 32px;
                     }
 
-                    img{
+                    svg{
                         width: 100%;
                     }
                 }
 
                 a.phone{
-					font-family: GE-Sans-Regular;
-                    font-size: 18px;
-                    color: $science_blue;
+                    font-size: 16px;
+                    color: $white;
                     font-weight: 400;
                     padding: 10px 0px ;
                     transition: 0.3s;
+
+                    @media(min-width:1700px){
+                        font-size: 16px;
+                    }
         
                 }  
             }

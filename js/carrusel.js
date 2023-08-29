@@ -1,11 +1,9 @@
 const swiper= new Swiper('.swiper', {
-    slidesPerView: "auto",
-    
-    loop:"true",
-    
+    slidesPerView: 1,
+
     navigation: {
-    nextEl: '.services__title_button__buttons--next',
-    prevEl: '.services__title_button__buttons--prev',
+    nextEl: '.offer--next',
+    prevEl: '.offer--prev',
     },
 
 
