@@ -27,12 +27,14 @@
 @font-face {
 	font-family: GE Sans;
 	src: url('../fonts/gesans-regular.ttf') format('truetype');
+	font-display: swap;
 
   }
 
   @font-face {
 	font-family: GE Sans Bold;
 	src: url('../fonts/gesans-bold.ttf') format('truetype');
+	font-display: swap;
 
   }
 
