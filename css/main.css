@@ -1178,6 +1178,88 @@
     color: #0870D8;
     border: 2px solid #0870D8; }
 
+.banner_privacidad {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../img/fondo-gracias.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 80px;
+  padding: 60px 0; }
+  .banner_privacidad h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: GE Sans bold;
+    border-radius: 10px; }
+    @media (min-width: 768px) {
+      .banner_privacidad h2 {
+        font-size: 25px; } }
+    @media (min-width: 1700px) {
+      .banner_privacidad h2 {
+        font-size: 35px; } }
+
+.aviso {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 0; }
+  @media (min-width: 1199px) {
+    .aviso {
+      margin: 60px 9; } }
+  .aviso h2 {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: GE Sans bold; }
+    @media (min-width: 768px) {
+      .aviso h2 {
+        font-size: 25px; } }
+    @media (min-width: 1700px) {
+      .aviso h2 {
+        font-size: 35px; } }
+  .aviso p {
+    padding-top: 15px;
+    color: black;
+    font-family: GE Sans;
+    font-size: 15px; }
+    @media (min-width: 1199px) {
+      .aviso p {
+        font-size: 18px;
+        padding-top: 20px; } }
+  .aviso a {
+    border: 2px solid #0870D8;
+    margin-top: 30px;
+    background-color: #0870D8;
+    font-family: GE Sans Bold;
+    font-weight: bold;
+    padding: 15px 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center; }
+    @media (min-width: 300px) {
+      .aviso a {
+        font-size: 20px; } }
+    @media (min-width: 768px) {
+      .aviso a {
+        font-size: 25px; } }
+    @media (min-width: 1700px) {
+      .aviso a {
+        font-size: 30px; } }
+  .aviso a:hover {
+    background-color: white;
+    color: #0870D8;
+    border: 2px solid #0870D8; }
+
 @font-face {
   font-family: GE Sans;
   src: url("../fonts/gesans-regular.ttf") format("truetype");
